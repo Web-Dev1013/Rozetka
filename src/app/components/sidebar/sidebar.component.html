@@ -1,0 +1,25 @@
+<div class="logo">
+  <img src="../../../assets/img/logo/asdaspıdjpas9ugdbasbdpasubd.png" height="60px">
+</div>
+<div class="sidebar-wrapper">
+  <ul class="nav">
+    <li
+      routerLinkActive="active"
+      *ngFor="let menuItem of menuItems"
+      class="{{ menuItem.class }} nav-item"
+    >
+      <a [routerLink]="[menuItem.path]">
+        <i class="tim-icons  {{ menuItem.icon }}"></i>
+        <p>{{ menuItem.title }}</p>
+      </a>
+      <ul class="dropdown-menu children">
+        <li class="dropdown-item" *ngFor="let children of menuItem.children_menu">
+          <a class="sublist text-decoration-none" href=""> {{children}} </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="sub-nav">
+
+</div>

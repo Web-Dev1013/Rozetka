@@ -1,0 +1,34 @@
+.white{
+    color: white;
+}
+.align-middle{
+    vertical-align: middle !important;
+}
+.top-nav{
+    padding: 15px 0;
+}
+.catalogue{
+    margin-left: 100%;
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    box-shadow: 0 0 3px rgba(238, 238, 238, 0.575);
+}
+.catalogue:hover{
+    cursor: pointer !important;
+}
+.modal-header{
+    padding: 10px !important;
+}
+.modal-header button{
+    top: 20px !important;
+}
+.top-subnav{
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+}
+.main-navbar{
+    top: 30px !important;
+}
