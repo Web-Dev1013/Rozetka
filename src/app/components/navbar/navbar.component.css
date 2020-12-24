@@ -8,7 +8,7 @@
     padding: 15px 0;
 }
 .catalogue{
-    margin-left: 100%;
+    margin-left: 10%;
     padding: 10px 40px;
     font-size: 16px;
     border-radius: 5px;
@@ -32,3 +32,35 @@
 .main-navbar{
     top: 30px !important;
 }
+.search-box{
+    width: 80%;
+    margin: 0 auto;
+}
+.search-box .search-bar{
+    width: 70%;
+}
+.search-box input{    
+    font-size: 16px;
+    border-color: white;
+}
+@media screen and (max-width: 991px){
+    .navbar .navbar-nav .btn span, .navbar .navbar-nav .btn span:hover, .navbar .navbar-nav .btn span:focus, .navbar .navbar-nav .btn span:active, .navbar .navbar-nav .btn span:active:focus {
+        color: white !important;
+    }
+    .navbar.bg-white:not(.navbar-transparent) .navbar-toggler-bar {
+        background-color: white !important;
+    }
+    .navbar.bg-white .dropdown-menu .dropdown-item:focus, .navbar.bg-white .dropdown-menu .dropdown-item:hover {
+        color: white;
+    }
+}
+.navbar.bg-white .navbar-nav .search-bar.input-group i {
+    color: white !important;
+}
+.navbar.bg-white .navbar-nav a.nav-link p {
+    color: white !important;
+}
+.navbar.bg-white .navbar-nav a.nav-link {
+    color: white !important;
+}
+

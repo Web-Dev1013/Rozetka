@@ -2,7 +2,7 @@
     height: auto !important;
 }
 .content{
-    padding-top: 100px !important;
+    padding-top: 123px !important;
 }
 .card-body{
     padding: 2px;
@@ -22,7 +22,8 @@
     font-size: 12px;
 }
 .card{
-    box-shadow: 0 3px 5px #151615;
+    background: white !important;
+    box-shadow: 0 1px 3px rgba(238, 238, 238, 0.596);
     transition: 0.2s;
 }
 .card:not(.card-chart):hover{
@@ -30,4 +31,7 @@
     transform: scale(1.05);
     z-index: 1000;
     cursor: pointer;
+}
+.picsum-img-wrapper img{
+    width: 100%;
 }

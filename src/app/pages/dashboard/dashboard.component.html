@@ -15,7 +15,7 @@
             [activeId]="'secondSlide'">
               <ng-template ngbSlide>
                 <div class="picsum-img-wrapper">
-                  <img src="../../../assets/img/28676.jpg" alt="Angular Carousel 1">
+                  <img class="img-responsive" src="../../../assets/img/28676.jpg" alt="Angular Carousel 1">
                 </div>
                 <div class="carousel-caption">
                   <h3>Title Goes Here</h3>
@@ -59,8 +59,8 @@
     <h2 class="main-goods__heading"><svg height="24" width="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-main-more"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> More products for selection </font></font></h2>
   </div>
   <div class="row px-3 my-2">
-    <div class="col-md-3 col-sm-6 col-lg-2 p-0" *ngFor="let Recommend of RecommendArr">
-      <div class="card">
+    <div class="col-md-4 col-sm-6 col-lg-2 p-0" *ngFor="let Recommend of RecommendArr">
+      <div class="card" routerLink="/productModel/:{{Recommend.id}}">
         <div class="card-body">
           <div class="img"><img class="img-responsive" src="{{Recommend.src}}"></div>
           <div class="description px-1">{{Recommend.description}}</div>
@@ -70,7 +70,7 @@
     </div>
   </div>
   <div class="row px-3 my-2">
-    <div class="col-md-3 col-sm-6 col-lg-2 p-0" *ngFor="let Bestseller of BestsellerArr">
+    <div class="col-md-4 col-sm-6 col-lg-2 p-0" *ngFor="let Bestseller of BestsellerArr">
       <div class="card">
         <div class="card-body">
           <div class="img"><img class="img-responsive" src="{{Bestseller.src}}"></div>
@@ -81,8 +81,8 @@
     </div>
   </div>
   <div class="row px-3 my-2">
-    <div class="col-md-3 col-sm-6 col-lg-2 p-0" *ngFor="let Outlet of OutletArr">
-      <div class="card">
+    <div class="col-md-4 col-sm-6 col-lg-2 p-0" *ngFor="let Outlet of OutletArr">
+      <div class="card" routerLink="{{Outlet.id}}" routerLinkActive="active">
         <div class="card-body">
           <div class="img"><img class="img-responsive" src="{{Outlet.src}}"></div>
           <div class="description px-1">{{Outlet.description}}</div>

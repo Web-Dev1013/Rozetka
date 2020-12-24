@@ -1,101 +1,25 @@
-<!-- <nav class=" navbar navbar-expand-lg navbar-absolute navbar-transparent">
-  <div class="container-fluid">
-    <div class=" navbar-wrapper top-nav">
-      <div class=" navbar-toggle d-inline">
-      </div>
-      <a class=" navbar-brand" href="javascript:void(0)"> +71233456776 </a>
-    </div>
-  </div>
-  <div class=" navbar-collapse" [ngbCollapse]="isCollapsed" id="subnavigation">
-    <ul class=" navbar-nav">
-      <li class=" search-bar input-group">
-        <button class=" btn btn-link" 
-          id="contacts">
-          <span>Contacts</span>          
-        </button>
-      </li>
-      <li class=" search-bar input-group">
-        <button class=" btn btn-link" 
-          id="help">
-          <span>Help</span>          
-        </button>
-      </li>
-      <li class=" search-bar input-group">
-        <button class=" btn btn-link"
-          id="covid">
-          <span>Our COVID-19 response</span>          
-        </button>
-      </li>
-      <li class=" search-bar input-group">
-      </li>
-      <li class=" search-bar input-group">
-        <button class=" btn btn-link"
-          id="city">
-          <span>City | Kiev</span>       
-        </button>
-      </li>
-      <li class=" search-bar input-group">
-        <button class=" btn btn-link"
-          id="account">
-          <span> Enter your personal account </span>          
-        </button>
-      </li>
-      
-    </ul>
-  </div>
-</nav><br><br> -->
-<nav class="top-subnav navbar navbar-expand-lg navbar-absolute navbar-transparent">
-  <button aria-label="Toggle navigation" class=" navbar-toggler" (click)="collapse()"
-    [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" id="subnavigation" type="button">
-    <span class=" navbar-toggler-bar navbar-kebab"> </span>
-    <span class=" navbar-toggler-bar navbar-kebab"> </span>
-    <span class=" navbar-toggler-bar navbar-kebab"> </span>
-  </button>
-  <div class=" navbar-collapse" [ngbCollapse]="isCollapsed" id="subnavigation">
-    <ul class=" navbar-nav mr-auto">
-      <li class=" search-bar input-group">
-        <button class=" btn btn-link" data-target="#searchModal" data-toggle="modal" (click)="open(content)"
-          id="search-button">          
-          <span class="d-md-block white align-middle"> +7123456789 </span>
-        </button>
-        <button class=" btn btn-link" >          
-          <span class="d-md-block white"> Contacts </span>
-        </button>
-        <button class=" btn btn-link" >          
-          <span class="d-md-block white"> Help </span>
-        </button>
-        <button class=" btn btn-link">          
-          <span class="d-md-block white align-middle"><a> Our COVID-19 response </a></span>
-        </button> 
-      </li>
-    </ul>
-    <ul class=" navbar-nav m-auto">
-      <li class=" search-bar input-group">
-        <button class="btn btn-link white" ><span>UA | RU</span></button>
-        <button class=" btn btn-link" data-target="#searchModal" data-toggle="modal" (click)="open(content)"
-          id="search-button">          
-          <span class="d-md-block white align-middle"> City | <a href = "" >Kiev </a></span>
-        </button>
-      </li>
-    </ul>
-  </div>
-</nav>
-<nav class=" navbar navbar-expand-lg navbar-absolute navbar-transparent main-navbar">
+
+<nav class=" navbar navbar-expand-lg navbar-dark bg-dark navbar-absolute navbar-transparent flex-column">
+  
   <div class=" container-fluid">
-    <div class=" navbar-wrapper">
+    <div class=" navbar-wrapper d-inline">
       <div class=" navbar-toggle d-inline">
         <button class=" navbar-toggler" type="button" data-target="#searchModal" data-toggle="modal"
           (click)="open(content)" id="search-button">
-          <span class=" navbar-toggler-bar bar1"> </span>
-          <span class=" navbar-toggler-bar bar2"> </span>
-          <span class=" navbar-toggler-bar bar3"> </span>
+          <span class="fa fa-sitemap"> </span>
+      
         </button>
       </div>
-      <!-- <a class=" navbar-brand" href="javascript:void(0)">
-        <img src="../../../assets/img/logo/sdasdasd.png" height="60px"> -->
-        <!-- <img src="../../../assets/img/logo/asdaspıdjpas9ugdbasbdpasubd.png" height="70px"> -->
-      <!-- </a> -->
-      <span class="catalogue white">catalogue</span>
+    </div>
+
+    
+
+    <div class="search-box navbar-toggle d-inline">
+      <ul class="navbar-nav m-auto search-box">
+        <li class="search-bar">
+          <input type="search" class="form-control" placeholder="Search...">
+        </li>
+      </ul>
     </div>
     <button aria-label="Toggle navigation" class=" navbar-toggler" (click)="collapse()"
       [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" id="navigation" type="button">
@@ -106,31 +30,86 @@
     <div class=" navbar-collapse" [ngbCollapse]="isCollapsed" id="navigation">
       <ul class=" navbar-nav ml-auto">
         <li class=" search-bar input-group">
-          <button class=" btn btn-link" data-target="#searchModal" data-toggle="modal" (click)="open(content)"
-            id="search-button">
-            <i class=" tim-icons icon-zoom-split"> </i>
-            <span class=" white d-md-block"> Search </span>
-          </button>
-        </li>
-        <li class=" nav-item" ngbDropdown>
-          <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
+          <a class="  btn btn-link" href="javascript:void(0)">
             <i class=" tim-icons icon-sound-wave"> </i>
             <span class="white d-md-block">PREMIUM</span>
           </a>
         </li>
-        <li class=" nav-item" ngbDropdown>
-          <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
+        <li class=" search-bar input-group">
+          <a class="  btn btn-link" href="javascript:void(0)">
             <i class=" tim-icons icon-heart-2"> </i>
             <span class="white d-md-block">Favorite</span>
           </a>
         </li>
-        <li class=" nav-item" ngbDropdown>
-          <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
+        <li class=" search-bar input-group">
+          <a class="  btn btn-link" href="javascript:void(0)">
             <i class=" tim-icons icon-cart"> </i>
             <span class="white d-md-block">Basket</span>
           </a>
         </li>
-        <li class=" nav-item" ngbDropdown>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    
+    <div class=" navbar-collapse" [ngbCollapse]="isCollapsed" id="navigation">
+      <ul class=" navbar-nav mx-auto">
+        <li class=" search-bar input-group px-4">
+          <a class="  btn btn-link" href="javascript:void(0)">
+            <i class="fa fa-phone"> </i>
+            <span class="white d-md-block">+7123456789</span>
+          </a>
+        </li>
+        <li class=" search-bar input-group px-4">
+          <a class="  btn btn-link" href="javascript:void(0)">
+            <i class="fa fa-address-card"> </i>
+            <span class="white d-md-block">Contacts</span>
+          </a>
+        </li>
+        <li class=" search-bar input-group px-4">
+          <a class="  btn btn-link" href="javascript:void(0)">
+            <i class="fa fa-question fa-question-circle"> </i>
+            <span class="white d-md-block">Help</span>
+          </a>
+        </li>
+        <li class=" search-bar input-group px-4">
+          <a class="  btn btn-link" href="javascript:void(0)">
+            <i class="fas fa-ambulance"></i>
+            <span class="white d-md-block">Our COVID-19 response</span>
+          </a>
+        </li>
+      
+        <li class=" nav-item px-4" ngbDropdown>
+          <a class=" nav-link font-weight-bold" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
+            
+            <a class="fas fa-language"></a>
+            <span class="white d-md-block">Language</span>
+          </a>
+          <ul class=" dropdown-navbar" ngbDropdownMenu>
+            <li class=" nav-link">
+              <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+                Ru
+              </a>
+            </li>
+            <li class=" nav-link">
+              <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+                UA
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        <li class=" search-bar input-group px-4">
+          <a class="  btn btn-link" href="javascript:void(0)">
+            <i class="fas fa-globe"></i>
+            <span class="white d-md-block">City</span>
+            
+          </a>
+          
+        </li>
+        <li class=" nav-item px-4" ngbDropdown>
           <a class=" nav-link" data-toggle="dropdown" href="javascript:void(0)" ngbDropdownToggle>
             <div class=" photo">
               <img alt="Profile Photo" src="../../../assets/img/avatar.png" />
